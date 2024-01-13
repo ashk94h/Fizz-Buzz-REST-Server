@@ -1,0 +1,90 @@
+{
+    "test_1_data": {
+        "int1": 3,
+        "limit": 6,
+        "str1": "aa",
+        "str2": "bb"
+    },
+    "test_1_desired_output": {
+        "int2": [
+            "This field is required."
+        ]
+    },
+    "test_2_data": {
+        "int1": "abcd",
+        "int2": 3,
+        "limit": 6,
+        "str1": "aa",
+        "str2": "bb"
+    },
+    "test_2_desired_output": {
+        "int1": [
+            "A valid integer is required."
+        ]
+    },
+    "test_3_data": {
+        "int1": 2,
+        "int2": 3,
+        "limit": 6,
+        "str1": "fizz",
+        "str2": "buzz"
+    },
+    "test_3_desired_output": [
+        "1",
+        "fizz",
+        "buzz",
+        "fizz",
+        "5",
+        "fizzbuzz"
+    ],
+    "test_4_data": [
+        {
+            "int1": 2,
+            "int2": 3,
+            "limit": 6,
+            "str1": "fizz",
+            "str2": "buzz"
+        },
+        {
+            "int1": 2,
+            "int2": 3,
+            "limit": 6,
+            "str1": "fizz",
+            "str2": "buzz"
+        },
+        {
+            "int1": 2,
+            "int2": 3,
+            "limit": 6,
+            "str1": "fizz",
+            "str2": "buzz"
+        },
+        {
+            "int1": 1,
+            "int2": 3,
+            "limit": 6,
+            "str1": "aa",
+            "str2": "bb"
+        },
+        {
+            "int1": 1,
+            "int2": 3,
+            "limit": 6,
+            "str1": "aa",
+            "str2": "bb"
+        }
+    ],
+    "test_4_desired_output": {
+        "max_used_parameter": [
+            {
+                "id": 2,
+                "int1": 2,
+                "int2": 3,
+                "limit": 6,
+                "str1": "fizz",
+                "str2": "buzz",
+                "hits": 3
+            }
+        ]
+    }
+}
