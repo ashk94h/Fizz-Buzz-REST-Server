@@ -43,7 +43,8 @@ Now to run application
         python manage.py runserver
 
 API Documentation
-1)Fizz Buzz endpoint
+
+    1)Fizz Buzz endpoint
 
         url:localhost:8000/fizzbuzz
 
